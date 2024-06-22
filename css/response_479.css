@@ -1,0 +1,273 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 25px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs .btn
+    {
+        padding: 11px 16px 9px;
+    }
+
+
+    .tabs .btn + .btn
+    {
+        margin-left: 4px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        height: 40px;
+    }
+
+
+    header .slogan
+    {
+        font-size: 10px;
+
+        margin-left: 15px;
+        padding: 2px 0 2px 15px;
+    }
+
+
+    header .menu_btn
+    {
+        width: 40px;
+        height: 40px;
+        margin-right: -10px;
+    }
+
+
+
+    /*------------------
+        Sidebar menu
+    ------------------*/
+    .sidebar_menu
+    {
+        width: 100%;
+    }
+
+
+    .sidebar_menu .close_btn
+    {
+        right: 20px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 30px;
+        padding-top: 145px;
+    }
+
+
+
+    .page_title
+    {
+        font-size: 38px;
+    }
+
+
+
+    .page_head .links a
+    {
+        padding: 10px 20px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .main_slider .swiper.main .cont
+    {
+        min-height: 550px;
+        padding-top: 145px;
+        padding-bottom: 145px;
+    }
+
+
+    .main_slider .swiper.main .title
+    {
+        font-size: 38px;
+    }
+
+
+    .main_slider .swiper.main .link a
+    {
+        padding: 10px 20px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .item
+    {
+        font-size: 13px;
+
+        padding: 50px 15px;
+    }
+
+
+
+    /*-----------
+        Video
+    -----------*/
+    .video .cont
+    {
+        padding: 0;
+    }
+
+
+    .video .link .thumb
+    {
+        border-radius: 0;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .params .title
+    {
+        font-size: 20px;
+    }
+
+
+    .service_info .params .items > *
+    {
+        min-height: 36px;
+        padding-left: 50px;
+    }
+
+
+    .service_info .params .icon
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .service_info .params .icon svg
+    {
+        width: 16px;
+        height: 12px;
+    }
+
+
+    .service_info .params .items br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .data .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*---------------
+        Transport
+    ---------------*/
+    .transport .item .info
+    {
+        padding: 24px;
+    }
+
+
+    .transport .item .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .phone
+    {
+        font-size: 20px;
+    }
+
+
+
+    .contacts_info .feedback
+    {
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px);
+        margin-right: -30px;
+        margin-left: -30px;
+        padding: 45px 30px;
+
+        border-radius: 0;
+    }
+
+
+    .contacts_info .feedback .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .contacts_info #map
+    {
+        height: 400px;
+        margin-top: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-top: 60px;
+    }
+}
