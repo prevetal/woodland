@@ -267,7 +267,8 @@
     ----------------*/
     .about_info .item
     {
-        padding: 100px 40px;
+        height: 330px;
+        padding: 40px;
     }
 
 

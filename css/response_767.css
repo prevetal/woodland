@@ -161,7 +161,8 @@
     ----------------*/
     .about_info .item
     {
-        padding: 60px 15px;
+        height: 200px;
+        padding: 30px 15px;
     }
 
 

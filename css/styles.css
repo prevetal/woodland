@@ -250,7 +250,7 @@ button
     overflow: clip;
     flex-direction: column;
 
-    min-width: 375px;
+    min-width: 360px;
     min-height: 100%;
 
     background: var(--bg);
@@ -1623,7 +1623,16 @@ header .menu_btn:hover
 {
     line-height: 120%;
 
-    padding: 164px 80px;
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 448px;
+    padding: 80px;
 
     text-align: center;
 
@@ -1637,9 +1646,62 @@ header .menu_btn:hover
     font-weight: 500;
     line-height: 120%;
 
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
     margin-bottom: 20px;
 
     color: #366747;
+}
+
+
+.about_info .item .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: calc(100% + 23px);
+    height: 100%;
+
+    transition: .25s linear;
+    transform: rotate(-30deg);
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.about_info .item:nth-child(1) .bg
+{
+    transition-delay: .1s;
+}
+
+.about_info .item:nth-child(2) .bg
+{
+    transition-delay: .25s;
+}
+
+.about_info .item:nth-child(3) .bg
+{
+    transition-delay: .4s;
+}
+
+.about_info .item:nth-child(4) .bg
+{
+    transition-delay: .55s;
+}
+
+
+.about_info .item.animated .bg
+{
+    transform: rotate(0);
+
+    opacity: 1;
 }
 
 

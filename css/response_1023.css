@@ -80,14 +80,29 @@
     /*----------------
         About info
     ----------------*/
+    .about_info .row
+    {
+        margin-left: -30px;
+    }
+
+
     .about_info .row > *
     {
-        width: 50%;
+        width: calc(50% - 30px);
+        margin-left: 30px;
     }
+
 
     .about_info .item
     {
-        padding: 72px 30px;
+        height: 340px;
+        padding: 30px;
+    }
+
+
+    .about_info .item .bg
+    {
+        width: 100%;
     }
 
 
@@ -309,6 +324,14 @@
     footer .consult_btn br
     {
         display: none;
+    }
+
+
+    footer .consult_btn:hover
+    {
+        transform: none;
+
+        background: #578c3e;
     }
 
 

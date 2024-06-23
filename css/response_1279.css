@@ -212,7 +212,14 @@
     ----------------*/
     .about_info .item
     {
-        padding: 72px 24px;
+        height: 268px;
+        padding: 24px;
+    }
+
+
+    .about_info .item .bg
+    {
+        width: calc(100% + 16px);
     }
 
 

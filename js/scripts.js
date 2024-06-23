@@ -190,6 +190,24 @@ document.addEventListener('DOMContentLoaded', function () {
 				: _self.removeClass('active')
 		})
 	})
+
+
+	// Animation
+	const boxes = document.querySelectorAll('.animate')
+
+	function scrollTracking(entries) {
+		for (const entry of entries) {
+			if (entry.intersectionRatio >= 0.2 && !entry.target.classList.contains('animated')) {
+				entry.target.classList.add('animated')
+			}
+		}
+	}
+
+	const observer = new IntersectionObserver(scrollTracking, {
+		threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+	})
+
+	boxes.forEach(element => observer.observe(element))
 })
 
 
@@ -215,7 +233,7 @@ window.addEventListener('resize', function () {
 		if (!fakeResize2) {
 			fakeResize2 = true
 
-			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+			if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 		} else {
 			fakeResize = false
 			fakeResize2 = true
